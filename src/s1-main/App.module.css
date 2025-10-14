@@ -1,9 +1,13 @@
 .App {
     --header_height: 60px;
+
 }
 
 .hw {
-
+    /*background-color: #00cc22;*/
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 70px;
 }
 
 .hwTitle {
