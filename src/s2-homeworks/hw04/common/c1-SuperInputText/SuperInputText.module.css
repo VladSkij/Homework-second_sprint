@@ -5,16 +5,31 @@
 }
 
 .inputWrapper {
+    display: flex;
+    flex-direction: column-reverse;
 }
 
 .superInput {
+    outline: none;
+    padding: 8px 12px;
+    width: 372px;
+    height: 36px;
+    border: 1px solid #d1d1d1;
+    border-radius: 5px;
 }
 
 .errorInput {
+    outline: none;
+    padding: 8px 12px;
+    width: 372px;
+    height: 36px;
+    border: 1px solid #c00;
+    border-radius: 5px;
 }
 
 .errorInput:focus {
 }
 
 .error {
+    color: #c00;
 }
