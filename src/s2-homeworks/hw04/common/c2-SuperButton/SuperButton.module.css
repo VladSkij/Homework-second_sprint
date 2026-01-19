@@ -56,4 +56,5 @@
 .button:disabled {
     background-color: #004d99;
     opacity: 0.5;
+    color: #ccc;
 }

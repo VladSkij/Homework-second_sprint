@@ -1,14 +1,26 @@
 .buttonsContainer {
+    display: flex;
+    gap:21px;
+    color:#fff;
+    text-decoration-color: #00cc22;
 }
 
 .clock {
+    margin-top: 35px;
+    margin-bottom: 35px;
 }
 
 .watch {
+    font-size: 20px;
+    margin-bottom: 8px;
 }
 
 .watch strong {
+    font-weight: 600;
 }
 
 .more {
+    margin-bottom: 27px;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.5);
 }
