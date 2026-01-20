@@ -1,3 +1,29 @@
 .loader {
     /*свг и/или анимация*/
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+
+    /* дуга с градиентом */
+    background: conic-gradient(
+            from 0deg,
+            rgba(120, 80, 255, 0) 0deg,
+            rgba(120, 80, 255, 0.15) 40deg,
+            rgba(120, 80, 255, 0.35) 90deg,
+            rgba(120, 80, 255, 0.65) 140deg,
+            rgba(120, 80, 255, 1) 200deg,
+            rgba(120, 80, 255, 0) 320deg,
+            rgba(120, 80, 255, 0) 360deg
+    );
+
+    -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 10px), #000 0);
+    mask: radial-gradient(farthest-side, transparent calc(100% - 10px), #000 0);
+
+    animation: spin 1.25s linear infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
 }
