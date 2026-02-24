@@ -37,7 +37,6 @@ const SuperDebouncedInput: React.FC<SuperDebouncedInputPropsType> = (
                 }
                 const newTimerId = window.setTimeout(() =>{
                     onDebouncedChange(value)
-                    console.log('send query')
                 },1500)
             setTimerId(newTimerId)
             // остановить предыдущий таймер
