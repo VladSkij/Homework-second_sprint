@@ -2,7 +2,6 @@ import React from 'react'
 import SuperSelect from '../../../hw07/common/c5-SuperSelect/SuperSelect'
 import {Pagination} from '@mui/material'
 import s from './SuperPagination.module.css'
-import {yellow} from "@mui/material/colors";
 
 export type SuperPaginationPropsType = {
     id?: string
@@ -22,7 +21,7 @@ const SuperPagination: React.FC<SuperPaginationPropsType> = (
 
     const onChangeCallback = (event: any, page: number) => {
         // пишет студент
-        // console.log(page)
+        console.log(page, itemsCountForPage)
         onChange(page, itemsCountForPage)
     }
 

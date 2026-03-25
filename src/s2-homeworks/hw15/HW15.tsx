@@ -69,8 +69,8 @@ const HW15 = () => {
         setCount(newCount)
         // setPage(
         // setCount(
-        sendQuery({page:1, count:newCount, sort: sort})
-        setSearchParams({page: '1', count: `${newCount}`, sort:''})
+        sendQuery({page: newPage, count:newCount, sort: sort})
+        setSearchParams({page: `${newPage}`, count: `${newCount}`, sort:`${sort}`})
         // sendQuery(
         // setSearchParams(
 
@@ -81,7 +81,6 @@ const HW15 = () => {
         // делает студент
 
         setSort(newSort)
-
         // setSort(
         setPage(1) // при сортировке сбрасывать на 1 страницу
 
